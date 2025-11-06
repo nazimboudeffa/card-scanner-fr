@@ -2,6 +2,8 @@
 
 Un projet expérimental pour créer une base de données complète des cartes Pokémon en français, avec génération automatique à partir d'images de référence et extraction de métadonnées depuis Cardmarket.
 
+Ce projet doit rester dans la légalité et respecter toutes les règles
+
 ---
 
 ## 📋 Table des matières
@@ -48,9 +50,6 @@ card-scanner-fr-python/
 ├── test_images/                    # Images de test
 ├── test_reference_images/          # Images de référence pour tests
 │
-├── generate_cards.py               # Script de génération automatique
-├── scrape_cardmarket.py            # Script d'extraction Cardmarket
-├── merge_cardmarket_data.py        # Script de fusion des données
 ├── requirements.txt                # Dépendances Python
 ├── main.ipynb                      # Notebook Jupyter principal
 └── README.md                       # Ce fichier
@@ -98,7 +97,7 @@ reference_images/mega-evolution/fr-fr/
 
 Les images doivent suivre le format de nommage : `JL2G_FR_<numéro>.png`
 
-ATTENTION ! Je ne donne pas le dossier vous devez le faire vous même car je ne veux pas de problèmes, merci
+ATTENTION ! Je ne fournit pas le dossier des images ni le JSON vous devez le faire vous même car je ne veux pas de problèmes, merci
 
 ---
 
@@ -109,7 +108,7 @@ Le script `generate_cards.py` crée automatiquement des entrées JSON pour chaqu
 #### Exécution :
 
 ```powershell
-python generate_cards.py
+python generate_db.py
 ```
 
 #### Ce que fait le script :
@@ -240,18 +239,14 @@ python merge_cardmarket_data.py
 
 | Script | Description | Sortie |
 |--------|-------------|--------|
-| `generate_db.py` | Génère des entrées à partir des images | `cards.json` |
-| `merge_cardmarket_data.py` | Fusionne les deux sources | `cards.json` (mis à jour) |
-| `main.ipynb` | Notebook Jupyter pour tests et analyses | - |
+| `main.ipynb` | Notebook Jupyter | - |
 
 ---
 
 ## 🔄 Workflow recommandé
 
 1. **Télécharger** les images de référence
-2. **Exécuter** `generate_cards.py` pour créer la structure de base
-3. **Exécuter** `scrape_cardmarket.py` pour obtenir les métadonnées officielles
-4. **Exécuter** `merge_cardmarket_data.py` pour enrichir les données
+2. **Exécuter** `main.ipynb` pour créer la structure de base
 5. **Personnaliser** manuellement les détails avancés (attaques, talents, etc.)
 
 ---
