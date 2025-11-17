@@ -2,10 +2,6 @@
 
 Un projet expérimental pour créer une base de données complète des cartes Pokémon en français, avec génération automatique à partir d'images de référence et extraction de métadonnées depuis Cardmarket.
 
-ATTENTION ! Je ne fournis pas le dossier des images ni le JSON, vous devez le faire vous même car je ne veux pas de problèmes, merci
-
-Ce projet doit rester dans la légalité et respecter toutes les règles
-
 ---
 
 ## 📋 Table des matières
